@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.header {
+    max-width: 1146px;
+    width: 90%;
+    margin: auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.app {
+    background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90%), url(https://i.yapx.ru/L3AoE.gif) no-repeat center right;
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1146px;
+    margin: auto;
+    width: 90%;
+}
+
+.main .description {
+    max-width: 460px;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+
+.tags {
+    color: #E5E5E5;
+    opacity: 0.4;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 460px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    margin-right: 10px;
+}
+
+.tags .age {
+    border: 1px solid #E5E5E5;
+    padding: 1px 5px;
+    border-radius: 2px;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 140%;
+    background: #2F2F2F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button.button-primary {
+    background-color: #EA6E20;
+    margin-right: 15px;
+}
+
+.button-text {
+    margin-left: 10px;
+}
+
+.button-default {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 1200px) {
+    .app {
+        background-size: 50%;
+        background-image: linear-gradient(90deg, rgb(1, 2, 2) 0%, rgb(1, 2, 2) 1%, rgba(1, 2, 2, 0.2) 90%), url(https://i.yapx.ru/L3AoE.gif);
+    }
+}
+
+@media(max-width: 768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background-position: bottom center;
+    }
+
+    .description {
+        font-size: 16px;
+        max-width: 333px;
+    }
+
+    .film-logo {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .button-text, .user-name {
+        display: none;
+    }
+
+    .app {
+        padding-bottom: 250px;
+    }
+
+    .tags {
+        justify-content: left;
+    }
+}
+
+#form-purchase div {
+    margin-top: 10px;
+}
